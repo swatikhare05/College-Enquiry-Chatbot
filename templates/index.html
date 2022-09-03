@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+{% comment %} <div class="container">
+<img src="..." class="img-fluid" alt="...">
+</div> {% endcomment %}
+
+<br class="row">
+<div class="container">
+<div class="row">
+  <div class="card col border-warning mb-1" style="height: 30rem; width=20rem;">
+    <div class="card-body ">
+      <center><h3 class="title text-warning" style="text-color:Black;">Acrobot</h3></center>
+      <form method="GET" action=/xyz/>
+      
+          
+          <div class="row justify-content-end">
+            You : <div class=" card bg-warning p-1" style="width:auto ; height: auto;" >{{ You}}<br></div>
+          </div>
+
+          <div class="row justify-content-start">
+            Acrobot : <div class=" card bg-warning  p-1" style="width:auto ; height: auto;">{{ Acrobot}}</div>
+          </div>
+        <div class="row justify-content-around d-flex align-items-end" style="height: 20rem;"><br><br><br><br><br><br><br>
+        <br><br><br><input type="text" name="input2" class="col-8  form-control"></input>
+         <button type="submit" class="btn btn-warning col-3">Send</button>
+        </div>
+      </form>
+      </div>
+  </div>
+</div>
+</div>
+{% endblock body %}
